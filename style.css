@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 16px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 8%);
+    width: 98%;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 70%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.icon-container {
+    border-radius: 50%;
+    background-color: white;
+    width: 23px;
+    height: 23px;
+}
+
+
+.icon-frontend {
+    width: 23px;
+}
+
+.icon {
+    padding: 3px;
+}
+
+.icon-github {
+    color: white;
+}
+
+.icon-linkedin {
+    width: 20px;
+    padding: 4px;
+}
+
+.nome {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+.place {
+    color: #00FADF;
+    text-align: center;
+}
+
+.occupation {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 1.5;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    width: 100%;
+    background-color: hsl(0, 0%, 20%);
+    padding: 10px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-weight: bolder;
+}
+
+.link-container:hover {
+    background-color: #00FADF;
+}
+
+.link-container:hover a {
+    color: hsl(0, 0%, 12%);
+}
+
+.link-container:hover .icon-github {
+    color: hsl(0, 0%, 12%);
+}
+
+.link-container:hover .icon-linkedin {
+    color: #00FADF;
+}
+
+.link-container:hover .icon {
+    color: #00FADF;
+}
+
+.link-container:hover .icon-container {
+    background-color: hsl(0, 0%, 12%);
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 500px;
+    }
+}
+
