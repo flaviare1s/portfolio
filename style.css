@@ -41,7 +41,7 @@ body {
 
 #menu {
     position: absolute;
-    background-color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 12%);
     width: 100%;
     top: 40px;
     right: 0px;
@@ -50,7 +50,8 @@ body {
     justify-content: left;
     list-style: none;
     gap: 8px;
-    height: 450px;
+    height: 460px;
+    z-index: 1000;
 }
 
 #nav.active #menu {
