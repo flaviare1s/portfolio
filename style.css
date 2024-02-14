@@ -31,6 +31,50 @@ body {
     margin: auto;
     padding: 30px;
     border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+}
+
+#nav {
+    height: 40px;
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    background-color: hsl(0, 0%, 8%);
+    width: 100%;
+    top: 40px;
+    right: 0px;
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    list-style: none;
+    gap: 8px;
+    height: 450px;
+}
+
+#nav.active #menu {
+    display: block;
+}
+
+.link-menu {
+    font-size: 14px;
+    font-weight: normal;
+    color: #00FADF;
+    text-align: left;
+    display: block;
+    padding: 10px;
+}
+
+.link-menu:hover {
+    background-color: #00fae12c;
+}
+
+#btn-menu {
+    background-color: transparent;
+    color: #00FADF;
+    border: none;
+    cursor: pointer;
 }
 
 .icon-container {
@@ -59,19 +103,19 @@ body {
 }
 
 .nome {
-    color: hsl(0, 0%, 100%);
-    font-size: 20px;
+    color: #00FADF;
+    font-size: 24px;
     text-align: center;
-    padding: 20px 0px 10px 0px;
+    padding: 20px 0px 15px 0px;
 }
 
 .place {
-    color: #00FADF;
+    color: white;
     text-align: center;
 }
 
 .occupation {
-    color: hsl(0, 0%, 100%);
+    color: #00FADF;
     text-align: center;
     padding: 20px 0px;
     line-height: 1.5;
@@ -139,6 +183,10 @@ a {
 @media screen and (min-width: 500px) {
     .container {
         width: 500px;
+    }
+
+    #menu {
+        height: 400px;
     }
 }
 
