@@ -45,17 +45,21 @@ body {
     width: 100%;
     top: 40px;
     right: 0px;
-    display: none;
+    display: block;
     flex-direction: column;
     justify-content: left;
     list-style: none;
     gap: 8px;
-    height: 440px;
+    height: 0;
+    transition: .5s;
     z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
 }
 
 #nav.active #menu {
-    display: block;
+    height: 420px;
+    visibility: visible;
 }
 
 .link-menu {
@@ -73,10 +77,48 @@ body {
 }
 
 #btn-menu {
+    display: flex;
+    align-items: center;
     background-color: transparent;
-    color: #00FADF;
+    color: rgba(255, 255, 255, 0.437);
+    font-weight: bolder;
     border: none;
     cursor: pointer;
+    gap: 16px;
+}
+
+#btn-menu:hover {
+    color: #00FADF;
+}
+
+#burger {
+    display: block;
+    width: 20px;
+    border-top: 2px solid currentColor;
+}
+
+#burger::after, #burger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #burger {
+    border-top-color: transparent;
+}
+
+#nav.active #burger::after {
+    transform: rotate(-135deg);
+}
+
+#nav.active #burger::before {
+    transform: rotate(135deg);
+    top: 7px;
 }
 
 .icon-container {
@@ -187,7 +229,7 @@ a {
         width: 500px;
     }
 
-    #menu {
+    #nav.active #menu {
         height: 400px;
     }
 }
