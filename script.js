@@ -1,25 +1,18 @@
 const btnMobile = document.querySelector('#btn-menu')
+const card = document.querySelector('.card')
+const menu = document.querySelector('#menu')
+const nav = document.querySelector('#nav')
 
 function toggleMenu() {
-    const nav = document.querySelector('#nav')
+    console.log('Clique no botão detectado')
     nav.classList.toggle('active')
+    
+    if (nav.classList.contains('active')) {
+        menu.style.height = (card.offsetHeight - 71) + 'px'
+    } else {
+        menu.style.height = '0'
+    }
 }
 
 btnMobile.addEventListener('click', toggleMenu)
 
-
-window.onload = function() {
-    var alturaCard = document.querySelector('.card').offsetHeight
-    var menu = document.getElementById('#menu')
-    var nav = document.getElementById('#nav')
-
-    nav.addEventListener('click', function() {
-        if (nav.classList.contains('active')) {
-            menu.style.height = '0'
-            nav.classList.remove('active')
-        } else {
-            menu.style.height = alturaCard + 'px'
-            nav.classList.add('active')
-        }
-    })
-}

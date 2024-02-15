@@ -58,7 +58,6 @@ body {
 }
 
 #nav.active #menu {
-    height: 420px;
     visibility: visible;
 }
 
@@ -244,10 +243,6 @@ a {
 @media screen and (min-width: 500px) {
     .container {
         width: 500px;
-    }
-
-    #nav.active #menu {
-        height: 400px;
     }
 
     .sobre-container {
