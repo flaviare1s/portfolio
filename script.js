@@ -7,7 +7,7 @@ function toggleMenu() {
     nav.classList.toggle('active')
     
     if (nav.classList.contains('active')) {
-        menu.style.height = (card.offsetHeight - 71) + 'px'
+        menu.style.height = (card.offsetHeight - 70) + 'px'
     } else {
         menu.style.height = '0'
     }
