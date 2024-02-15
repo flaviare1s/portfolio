@@ -174,12 +174,13 @@ body {
 .link-container {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     gap: 30px;
     width: 100%;
     background-color: hsl(0, 0%, 20%);
     padding: 10px;
-    padding-left: 30px;
+    padding-left:  40px;
+    padding-right: 40px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -258,6 +259,11 @@ a {
 
     .card::-webkit-scrollbar {
         width: 5px;
+    }
+
+    .link-container {
+        gap: 80px;
+        padding-left: 85px;
     }
 
     .sobre-container {
