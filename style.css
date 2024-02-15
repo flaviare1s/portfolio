@@ -251,6 +251,15 @@ a {
         width: 500px;
     }
 
+    .card {
+        height: 468px;
+        overflow: auto;
+    }
+
+    .card::-webkit-scrollbar {
+        width: 5px;
+    }
+
     .sobre-container {
         font-size: 16px;
     }
