@@ -247,6 +247,15 @@ a {
     padding-bottom: 20px;
 }
 
+.pt {
+    padding-top: 20px;
+}
+
+.texto-sobre {
+    border-left: 2px solid #00FADF;
+    padding-left: 10px;
+}
+
 @media screen and (min-width: 500px) {
     .container {
         width: 500px;
@@ -269,5 +278,6 @@ a {
     .sobre-container {
         font-size: 16px;
     }
+
 }
 
