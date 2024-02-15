@@ -234,6 +234,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    font-size: 12px;
 }
 
 .sobre {
@@ -247,6 +248,10 @@ a {
 
     #nav.active #menu {
         height: 400px;
+    }
+
+    .sobre-container {
+        font-size: 16px;
     }
 }
 
