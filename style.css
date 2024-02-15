@@ -27,7 +27,7 @@ body {
 
 .card {
     background-color: hsl(0, 0%, 12%);
-    width: 90%;
+    width: 95%;
     margin: auto;
     padding: 30px;
     border-radius: 10px;
@@ -222,6 +222,22 @@ a {
 
 .bolder {
     font-weight: 700;
+}
+
+.title-about {
+    font-size: 18px;
+}
+
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sobre {
+    color: white;
 }
 
 @media screen and (min-width: 500px) {
