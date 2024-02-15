@@ -4,7 +4,6 @@ const menu = document.querySelector('#menu')
 const nav = document.querySelector('#nav')
 
 function toggleMenu() {
-    console.log('Clique no botão detectado')
     nav.classList.toggle('active')
     
     if (nav.classList.contains('active')) {
