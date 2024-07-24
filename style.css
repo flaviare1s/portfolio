@@ -32,6 +32,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
+    min-height: 470px;
 }
 
 #nav {
@@ -249,6 +250,7 @@ a {
 
 .pt {
     padding-top: 20px;
+    display: inline-block;
 }
 
 .texto-sobre {
