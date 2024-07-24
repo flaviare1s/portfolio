@@ -1,5 +1,3 @@
 # portfolio
 
-**Repository created to develop my professional portfolio.**
-
-**Repositório criado para desenvolver meu portfólio profissional.**
+ Repositório criado para desenvolver um portfólio profissional simples, utilizando HTML, CSS e JavaScript.
